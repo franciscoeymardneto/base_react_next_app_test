@@ -1,6 +1,7 @@
 {
     "*.{ts,tsx}":[
         "eslint 'pages/**' --fix",
-        "eslint 'src/**' --fix"
+        "eslint 'src/**' --fix",
+        "yarn test:staged"
     ]
 }

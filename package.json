@@ -8,7 +8,10 @@
     "start": "next start",
     "prepare": "husky install",
     "lint-staged": "yarn lint-staged",
-    "test": "jest"
+    "test": "jest --passWithNoTests",
+    "test:watch": "yarn test -- --watch",
+    "test:staged": "yarn test -- --findRelatedTests",
+    "test:ci": "yarn test -- --coverage"
   },
   "dependencies": {
     "next": "10.1.3",
