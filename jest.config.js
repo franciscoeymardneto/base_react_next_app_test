@@ -8,5 +8,8 @@ module.exports = {
   coverageDirectory: 'coverage',
   transform: {
     '.+\\.ts$': 'ts-jest'
+  },
+  moduleNameMapper: {
+    '@/(.*)': '<rootDir>/src/$1'
   }
 }
